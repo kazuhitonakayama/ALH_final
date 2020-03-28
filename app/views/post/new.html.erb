@@ -1,0 +1,16 @@
+<div class="index">
+    <div class="index-postarea">
+        <%= form_with model: @post, url: { action: :create }, class: "new_post", local: true do |f| %>
+            <%= f.label :title %>
+            <%= f.text_field :title, autofocus: true, class: "form-control postName", placeholder: "大項目を入力してください" %>
+            <div class="text-center"><%= f.submit "投稿", class: "submitBtn" %></div>
+        <% end %>
+    </div>
+    <h1 class="top-title">投稿一覧</h1>
+        <% @posts.each do |post| %>
+            <div class="list">
+                <%= post.title %></h2>
+            </div>
+        <% end %>
+</div>
+
