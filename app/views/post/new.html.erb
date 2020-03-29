@@ -1,4 +1,5 @@
 <div class="index">
+    <!--<div class="index-bg"></div>-->
     <div class="index-postarea">
         <%= form_with model: @post, url: { action: :create }, class: "new_post", local: true do |f| %>
             <%= f.label :title %>
@@ -6,11 +7,15 @@
             <div class="text-center"><%= f.submit "投稿", class: "submitBtn" %></div>
         <% end %>
     </div>
-    <h1 class="top-title">投稿一覧</h1>
-        <% @posts.each do |post| %>
-            <div class="list">
-                <%= post.title %></h2>
-            </div>
-        <% end %>
+    <div class="index-posts">
+        <h1 class="index-posts-title">投稿一覧</h1>
+        <div class="index-posts-area">
+            <% @posts.each do |post| %>
+                <div class="post">
+                    <%= post.title %></h2>
+                </div>
+            <% end %>
+        </div>
+    </div>
 </div>
 

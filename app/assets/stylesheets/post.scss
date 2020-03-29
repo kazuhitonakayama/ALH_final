@@ -1,3 +1,60 @@
 // Place all the styles related to the post controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+// new 投稿と投稿一覧ページ
+.index {
+    background-image: url("index-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.index-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 10;
+}
+
+.index-posts {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.index-posts-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 11;
+}
+
+.index-postarea {
+    position: relative;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form.new_post {
+    z-index: 11;
+}
+
+.post {
+    width: 40%;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    background: rgba(237, 20, 61, 0.5);
+}
