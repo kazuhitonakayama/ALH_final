@@ -1,11 +1,14 @@
 <div class="index">
     <!--<div class="index-bg"></div>-->
-    <div class="index-postarea">
-        <%= form_with model: @post, url: { action: :create }, class: "new_post", local: true do |f| %>
-            <%= f.label :title %>
-            <%= f.text_field :title, autofocus: true, class: "form-control postName", placeholder: "大項目を入力してください" %>
-            <div class="text-center"><%= f.submit "投稿", class: "submitBtn" %></div>
-        <% end %>
+    <div class="new-postarea">
+        <h1 class="index-title">新規投稿</h1>
+        <div class="index-postarea">
+            <%= form_with model: @post, url: { action: :create }, class: "new_post", local: true do |f| %>
+                <%= f.label :title %>
+                <%= f.text_field :title, autofocus: true, class: "form-control postName", placeholder: "大項目を入力してください" %>
+                <div class="text-center"><%= f.submit "投稿", class: "submitBtn" %></div>
+            <% end %>
+        </div>
     </div>
     <div class="index-posts">
         <h1 class="index-posts-title">投稿一覧</h1>

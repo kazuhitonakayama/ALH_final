@@ -24,6 +24,14 @@
     z-index: 10;
 }
 
+h1.index-title {
+    text-align: center;
+}
+
+.new-postarea {
+    padding: 4vh 0px;
+}
+
 .index-posts {
     width: 60%;
     margin: auto;
@@ -57,4 +65,10 @@ form.new_post {
     margin: 20px 0px;
     border-radius: 10px;
     background: rgba(237, 20, 61, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .post {
+        width: 100%;
+    }
 }
