@@ -58,6 +58,27 @@ form.new_post {
     z-index: 11;
 }
 
+input.submitBtn {
+    color: #fff;
+    background-color: rgba(237, 20, 61, 0.5);
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+
+input#post_title {
+    display: block;
+    margin: 10px auto;
+}
+
+input#post_title {
+    background: none;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
 .post {
     width: 40%;
     border: 1px solid #fff;
