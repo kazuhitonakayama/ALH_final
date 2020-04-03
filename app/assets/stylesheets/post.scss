@@ -7,6 +7,35 @@
     margin: 0;
 }
 
+// top ページ
+.top {
+    background-image: url("ogp.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.top-content {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.to-post-new {
+    text-decoration: none;
+    background: rgba(44, 146, 143,0.6);
+    /* margin: 30px; */
+    display: block;
+    /* position: absolute; */
+    padding: 10px;
+    border-radius: 10px;
+    /* width: 100%; */
+    color: rgb(255,255,255);
+}
 // new 投稿と投稿一覧ページ
 .index {
     background-image: url("index-bg.jpg");
@@ -85,7 +114,9 @@ input#post_title {
     padding: 20px;
     margin: 20px 0px;
     border-radius: 10px;
-    background: rgba(237, 20, 61, 0.5);
+    color: #000;
+    font-weight: bold;
+    background: rgba(255,255,255,0.4);
 }
 
 @media screen and (max-width: 768px) {
